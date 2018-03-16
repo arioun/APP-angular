@@ -1,0 +1,49 @@
+
+section {
+	margin: 0 auto;
+}
+
+#btn{display: inline-block;position: relative;left: 510px;top: 12px;}
+
+h2 {
+	position: relative;
+}
+
+span {
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	display: inline-block;
+	padding: 0 5px;
+	height: 20px;
+	border-radius: 20px;
+	background: #E6E6FA;
+	line-height: 22px;
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+}
+
+li,ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	height: 32px;
+	line-height: 32px;
+	background: #fff;
+	position: relative;
+	margin-bottom: 10px;
+	padding: 0 45px;
+	border-radius: 3px;
+	border-left: 5px solid #629A9C;
+	
+}
+
+
+ul li {
+	border-left: 5px solid #999;
+	opacity: 0.5;
+}
+button{position: relative;left:430px;}

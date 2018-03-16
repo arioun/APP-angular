@@ -1,0 +1,19 @@
+<section>
+	<h2>正在进行
+		<span id="todocount">{{tolist.length}}</span>
+	</h2>
+	<li id="todolist" class="demo-box" *ngFor="let item of tolist;let i = index;">
+		<input type="checkbox" (change)="change(i)"> {{item}}
+		<button (click)="delData(i)">删除</button>
+	</li>
+
+	<h2>已经完成
+		<span id="donecount">{{comlist.length}}</span>
+	</h2>
+	<ul id="donelist">
+		<li *ngFor="let item of comlist;let i = index;">
+			<input type="checkbox" (change)="change2(i)"> {{item}}
+			<button (click)="delData2(idx)">删除</button>
+		</li>
+	</ul>
+</section>
