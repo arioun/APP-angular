@@ -1,0 +1,73 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button color='white' [menuToggle]="activeMenu">
+             <ion-icon name="menu"style="color: #000;"></ion-icon>
+        </button>
+        <ion-title class='nav'>
+            <img src="../../assets/imgs/资芽LOGO.png" class="img">
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only>
+          <ion-icon name='search' style="color: #000;"></ion-icon>
+        </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="banner">
+        <ion-slides>
+            <ion-slide>
+                <img src="../../assets/imgs/banner.png">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../assets/imgs/banner.png">
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <ion-toolbar no-border-top class="whitebg">
+        <ion-segment [(ngModel)]="appType" class="switch">
+            <ion-segment-button value="Paid" class='switchbtn'>
+                找信息
+            </ion-segment-button>
+            <ion-segment-button value="Free" class="switchbtn">
+                找服务
+            </ion-segment-button>
+
+        </ion-segment>
+    </ion-toolbar>
+    <div class="switchitem">
+        <div *ngFor="let item of getItems(appType)" class="item1">
+            <img src="{{item.img}}" alt="">
+            <p>{{ item.name }}</p>
+        </div>
+    </div>
+
+    <div class="yz">
+        <img src="../../assets/imgs/wg.png" class="yz-img">
+        <span class="great-inf-text">优质信息</span>
+    </div>
+    <ion-list inset *ngFor="let item of items;" class="item">
+        <div>
+            <span>{{item.namelist}}</span>
+        </div>
+        <button ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/bigmoney.png">
+      </ion-avatar>
+      <p>{{item.name}}</p>
+      <p>{{item.source}}</p>
+      <div item-content class="money">
+        <p style="color: #c01444;font-size: 20px;">{{item.money}}</p>
+        <p>{{item.moneyName}}</p>
+      </div>
+
+    </button>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>

@@ -1,0 +1,7 @@
+.tab-button[aria-selected=false] .ion-md-homeImg:before {
+    content: url('../assets/imgs/home.png');
+}
+
+.tab-button[aria-selected=true] .ion-md-homeImg:before {
+    content: url('../assets/imgs/home.png');
+}
