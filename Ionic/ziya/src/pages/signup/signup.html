@@ -1,0 +1,38 @@
+<ion-content padding class="login-bg">
+    <ion-icon name="ios-arrow-back" class="login-back" (click)="backtologin()"> </ion-icon>
+    <ion-title text-center><span style="color: #fff">手机注册</span></ion-title>
+
+    <div class="login-logo">
+        <img src="../../assets/imgs/login-logo.png">
+        <p>全球不良资产超级综合服务平台</p>
+    </div>
+
+    <ion-list class="login-input">
+        <div class="abc">
+            <img src="../../assets/imgs/login-un.png" alt="">
+            <ion-item class="input-bg">
+                <ion-input type="text" placeholder="手机号"></ion-input>
+            </ion-item>
+        </div>
+        <div class="abc">
+            <img src="../../assets/imgs/login-pw.png">
+            <ion-item class="input-yzm">
+                <ion-input type="text" placeholder="请输入验证码" style="color: #fff;"></ion-input>
+            </ion-item>
+            <button ion-button class="yzm">获取验证码</button>
+        </div>
+        <div class="abcd">
+            <img src="../../assets/imgs/login-pw.png">
+            <ion-item class="input-bg">
+                <ion-input type="password" placeholder="请输入密码" style="color: #fff;"></ion-input>
+            </ion-item>
+        </div>
+        <div class="abc">
+            <img src="../../assets/imgs/login-pw.png">
+            <ion-item class="input-bg">
+                <ion-input type="password" placeholder="请再次输入密码" style="color: #fff;"></ion-input>
+            </ion-item>
+        </div>
+    </ion-list>
+    <button ion-button round outline class="btn-size">注册</button>
+</ion-content>

@@ -1,18 +1,77 @@
-<!--
-  Generated template for the MinePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>mine</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title text-center>我的</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="mine-bg">
+    <div text-center class="mine-top">
+        <img src="../../assets/imgs/touxiang.png">
+        <h2>张扬</h2>
+        <p class="mine-location">北京市 &nbsp;| &nbsp;海淀区</p>
+        <p id="mine-corp">北京市资芽网络科技有限公司</p>
+    </div>
+    <ion-list class="mine-list">
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>芽币</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>我发布的</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>我合作的</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+    </ion-list>
 
+    <ion-list class="mine-list">
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>我的收藏</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>我的草稿箱</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>视频发布</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>完善信息</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>VIP等级</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>账户安全</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>帮助与反馈</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item (click)="setting()">
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>设置</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+    </ion-list>
 </ion-content>

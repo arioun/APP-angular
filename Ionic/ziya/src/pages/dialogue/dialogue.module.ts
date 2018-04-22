@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { LookPage } from './look';
+import { DialoguePage } from './dialogue';
 
 @NgModule({
   declarations: [
-    LookPage,
+    DialoguePage,
   ],
   imports: [
-    IonicPageModule.forChild(LookPage),
+    IonicPageModule.forChild(DialoguePage),
   ],
 })
-export class LookPageModule {}
+export class DialoguePageModule {}

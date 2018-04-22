@@ -1,3 +1,18 @@
-page-fabu {
+page-fabu {}
 
+.fabu-bg {
+    background-color: #f9f9f9;
+}
+
+.fabu-item {
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 15px 10px 0 20px;
+}
+
+.fabu-item img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
 }

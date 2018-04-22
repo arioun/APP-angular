@@ -2,7 +2,7 @@
 
     <ion-header>
         <ion-toolbar>
-            <ion-title class="nav">个人中心</ion-title>
+            <ion-title class="nav" text-center>个人中心</ion-title>
         </ion-toolbar>
     </ion-header>
 
@@ -10,7 +10,7 @@
         <ion-list>
             <ion-item>
                 <ion-icon name="star-outline" class="side-item"></ion-icon>
-                <span>开通会员</span>
+                <span (click)="openModal()">登录/注册</span>
             </ion-item>
             <ion-item>
                 <ion-icon name="bookmark-outline" class="side-item"></ion-icon>

@@ -1,0 +1,56 @@
+page-dialogue {}
+
+.dia-bg {
+    background-color: #eee;
+}
+
+.dia {
+    margin-top: 15px;
+}
+
+.dia img {
+    width: 50px;
+    height: 50px;
+}
+
+.dia button {
+    width: 200px;
+    border: none;
+    font-size: 18px;
+}
+
+.diar {
+    margin-top: 15px;
+}
+
+.diar img {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.diar button {
+    float: right;
+    width: 250px;
+    border: none;
+    font-size: 18px;
+    white-space: normal;
+    background-color: #fedb47;
+    font-weight: normal;
+}
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.foot img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}

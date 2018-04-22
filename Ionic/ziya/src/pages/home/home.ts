@@ -4,7 +4,8 @@ import { ViewChild } from '@angular/core';
 import { Slides,MenuController } from 'ionic-angular';
 import { NgSwitch } from '@angular/common';
 import { Directive } from '@angular/core';
-
+import { StatusBar } from '@ionic-native/status-bar';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -14,7 +15,7 @@ export class HomePage {
   activeMenu: string;
   @ViewChild(Slides) slides: Slides;
   ngSwitch: any;
-  constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController, private statusBar: StatusBar, private camera: Camera) {
 
   }
   ngAfterViewInit() {

@@ -1,0 +1,48 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button color='white' [menuToggle]="activeMenu" (click)="backtofabu()">
+             <ion-icon name="ios-arrow-back"style="color: #000;"></ion-icon>
+        </button>
+        <ion-title text-center>发布信息</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+          <ion-icon name='search' color="primary"></ion-icon>
+        </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="detail-bg">
+    <ion-list>
+        <ion-item>
+            <ion-label>地区</ion-label>
+            <ion-input type="text" placeholder="请选择"></ion-input>
+        </ion-item>
+        <ion-icon name="ios-arrow-forward" class="de-arrow"></ion-icon>
+        <ion-item>
+            <ion-label>来源</ion-label>
+            <ion-input type="text" placeholder="北京"></ion-input>
+        </ion-item>
+        <ion-icon name="ios-arrow-forward" class="de-arrow"></ion-icon>
+        <ion-item>
+            <ion-label>总金额</ion-label>
+            <ion-input type="text" placeholder="请输入"></ion-input>
+        </ion-item>
+        <ion-icon name="ios-arrow-forward" class="de-arrow"></ion-icon>
+        <ion-item>
+            <ion-label>转让价</ion-label>
+            <ion-input type="text" placeholder="300万"></ion-input>
+        </ion-item>
+        <ion-icon name="ios-arrow-forward" class="de-arrow"></ion-icon>
+    </ion-list>
+    <div>
+        <p style="font-size: 18px;font-weight: lighter;">内容描述</p>
+    </div>
+    <ion-item>
+        <ion-input type="text" placeholder="请输入内容..." class="large-input"></ion-input>
+    </ion-item>
+    <button ion-button block style="font-size: 18px;font-weight: lighter;">确认发布</button>
+</ion-content>

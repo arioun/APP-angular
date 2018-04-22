@@ -1,0 +1,32 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button color='white' [menuToggle]="activeMenu" (click)="backtomine()">
+        <ion-icon name="ios-arrow-back"  class="setting-back"> </ion-icon>
+        </button>
+        <ion-title text-center>设置</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list class="mine-list">
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>我的收藏</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>我的草稿箱</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+        <button ion-item>
+          <img src="../../assets/imgs/star.png" alt="">
+          <p>视频发布</p>
+          <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
+        </button>
+    </ion-list>
+    <button ion-button round outline class="btn-size" (click)="backtologin()">退出登录</button>
+</ion-content>

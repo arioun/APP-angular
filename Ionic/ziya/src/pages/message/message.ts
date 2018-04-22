@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the MessagePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ViewChild } from '@angular/core';
+import { Slides, MenuController } from 'ionic-angular';
+import { NgSwitch } from '@angular/common';
+import { Directive } from '@angular/core';
+import { StatusBar } from '@ionic-native/status-bar';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import { DialoguePage } from "../dialogue/dialogue";
 @IonicPage()
 @Component({
   selector: 'page-message',
@@ -15,11 +14,40 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MessagePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MessagePage');
-  }
+  items = [{
+    name: '唐教授',
+    img: '../../assets/imgs/touxiang.png',
+    text:'不良资产是指企业的资产尚未处理清楚',
+    time:'3:43 pm'
+  }, 
+  {
+    name: '李教授',
+      img: '../../assets/imgs/touxiang.png',
+      text: '不良资产是指企业的资产尚未处理清楚',
+      time: '3:43 pm'
+    },
+  {
+    name: '王教授',
+      img: '../../assets/imgs/touxiang.png',
+      text: '不良资产是指企业的资产尚未处理清楚',
+      time: '3:43 pm'
+  },
+    {
+      name: '孙教授',
+      img: '../../assets/imgs/touxiang.png',
+      text: '不良资产是指企业的资产尚未处理清楚',
+      time: '3:43 pm'
+    },
+  ];
 
+  openModal(item){
+    
+    
+    let profileModal = this.modalCtrl.create(DialoguePage, { name:item.name });
+    console.log(profileModal);
+    profileModal.present();
+  }
 }

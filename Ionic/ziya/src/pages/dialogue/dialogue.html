@@ -1,0 +1,30 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button color='white' [menuToggle]="activeMenu" (click)="backtomessage()">
+        <ion-icon name="ios-arrow-back"> </ion-icon>
+        </button>
+        <ion-title text-center>{{a}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="dia-bg">
+    <div class="dia">
+        <img src="../../assets/imgs/touxiang.png">
+        <button ion-button round color="light">您好，什么是不良资产</button>
+    </div>
+    <div class="diar">
+        <img src="../../assets/imgs/touxiang.png">
+        <button ion-button round color="light">不良资产是指企业的资产尚未处理清楚</button>
+    </div>
+    <div class="foot">
+        <img src="../../assets/imgs/message-voice.png">
+        <ion-item style="width: 250px;display: inline-block;">
+            <ion-input type="text" placeholder="输入聊天内容......" style="color: #000;"></ion-input>
+        </ion-item>
+        <img src="../../assets/imgs/laugh.png">
+        <img src="../../assets/imgs/plus.png">
+    </div>
+</ion-content>

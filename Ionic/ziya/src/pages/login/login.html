@@ -1,0 +1,30 @@
+<ion-content padding class="login-bg">
+    <button class="login-back" (click)="backtohome()">
+    <ion-icon name="ios-arrow-back"></ion-icon>
+    </button>
+    <ion-title text-center><span style="color: #fff">登录</span></ion-title>
+
+    <div class="login-logo">
+        <img src="../../assets/imgs/login-logo.png">
+        <p>全球不良资产超级综合服务平台</p>
+    </div>
+
+    <ion-list class="login-input">
+        <div class="abc">
+            <img src="../../assets/imgs/login-un.png" alt="">
+            <ion-item class="input-bg">
+                <ion-input type="text" placeholder="请输入您的手机号" style="color: #fff;"></ion-input>
+            </ion-item>
+        </div>
+        <div class="abc">
+            <img src="../../assets/imgs/login-pw.png">
+            <ion-item class="input-bg">
+                <ion-input type="password" placeholder="请输入您的密码" style="color: #fff;"></ion-input>
+            </ion-item>
+        </div>
+    </ion-list>
+
+    <button ion-button round class="btn-size">登录</button>
+    <button ion-button round outline class="btn-size" (click)="signup()">注册</button>
+    <p class="forget">忘记密码?</p>
+</ion-content>
