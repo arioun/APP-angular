@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
-import { Slides, MenuController } from 'ionic-angular';
-import { NgSwitch } from '@angular/common';
 import { Directive } from '@angular/core';
-import { StatusBar } from '@ionic-native/status-bar';
-import { Camera, CameraOptions } from '@ionic-native/camera';
 import { DialoguePage } from "../dialogue/dialogue";
 @IonicPage()
 @Component({
@@ -19,25 +15,25 @@ export class MessagePage {
 
   items = [{
     name: '唐教授',
-    img: '../../assets/imgs/touxiang.png',
+    img: 'assets/imgs/touxiang.png',
     text:'不良资产是指企业的资产尚未处理清楚',
     time:'3:43 pm'
   }, 
   {
     name: '李教授',
-      img: '../../assets/imgs/touxiang.png',
+      img: 'assets/imgs/touxiang.png',
       text: '不良资产是指企业的资产尚未处理清楚',
       time: '3:43 pm'
     },
   {
     name: '王教授',
-      img: '../../assets/imgs/touxiang.png',
+      img: 'assets/imgs/touxiang.png',
       text: '不良资产是指企业的资产尚未处理清楚',
       time: '3:43 pm'
   },
     {
       name: '孙教授',
-      img: '../../assets/imgs/touxiang.png',
+      img: 'assets/imgs/touxiang.png',
       text: '不良资产是指企业的资产尚未处理清楚',
       time: '3:43 pm'
     },

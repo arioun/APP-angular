@@ -1,0 +1,51 @@
+page-findinfo {}
+
+.info-search-div {
+    height: 43px;
+    background-color: #fedb47;
+}
+
+.info-search {
+    width: 390px;
+    margin: 0 auto;
+}
+
+.info-search input {
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+    border-radius: 60px!important;
+}
+
+.info-items {
+    text-align: center;
+    display: inline-block;
+}
+
+.info-items ion-icon {
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+}
+
+.sp-items {
+    border-left: 1px #eee solid;
+    border-right: 1px #eee solid;
+}
+
+.xiala {
+    float: left;
+    display: block;
+    width: 410px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+}
+
+.info-item {
+    margin-top: 10px;
+}
+
+.info-color {
+    color: #ffcc33;
+}

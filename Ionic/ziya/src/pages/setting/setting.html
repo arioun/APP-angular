@@ -1,10 +1,17 @@
 <ion-header>
-
     <ion-navbar>
-        <button ion-button color='white' [menuToggle]="activeMenu" (click)="backtomine()">
-        <ion-icon name="ios-arrow-back"  class="setting-back"> </ion-icon>
-        </button>
+        <ion-buttons left>
+            <button ion-button icon-only (click)="backtomine()">
+                <ion-icon name="ios-arrow-back"  class="setting-back"></ion-icon>
+            </button>
+        </ion-buttons>
+
         <ion-title text-center>设置</ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only>
+                    <ion-icon name='search' color="primary"></ion-icon>
+                </button>
+        </ion-buttons>
     </ion-navbar>
 
 </ion-header>
@@ -13,17 +20,17 @@
 <ion-content padding>
     <ion-list class="mine-list">
         <button ion-item>
-          <img src="../../assets/imgs/star.png" alt="">
+          <img src="assets/imgs/star.png" alt="">
           <p>我的收藏</p>
           <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
         </button>
         <button ion-item>
-          <img src="../../assets/imgs/star.png" alt="">
+          <img src="assets/imgs/star.png" alt="">
           <p>我的草稿箱</p>
           <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
         </button>
         <button ion-item>
-          <img src="../../assets/imgs/star.png" alt="">
+          <img src="assets/imgs/star.png" alt="">
           <p>视频发布</p>
           <ion-icon name="ios-arrow-forward" class="mine-arrow"></ion-icon>
         </button>

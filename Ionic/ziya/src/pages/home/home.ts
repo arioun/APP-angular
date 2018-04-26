@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { ViewChild } from '@angular/core';
-import { Slides,MenuController } from 'ionic-angular';
+import { Component, ViewChild, Directive } from '@angular/core';
+import { NavController, ModalController, Slides, MenuController } from 'ionic-angular';
 import { NgSwitch } from '@angular/common';
-import { Directive } from '@angular/core';
-import { StatusBar } from '@ionic-native/status-bar';
-import { Camera, CameraOptions } from '@ionic-native/camera';
+
+
+import { FindinfoPage } from "../findinfo/findinfo";
+import { FindservePage } from "../findserve/findserve";
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -15,7 +15,7 @@ export class HomePage {
   activeMenu: string;
   @ViewChild(Slides) slides: Slides;
   ngSwitch: any;
-  constructor(public navCtrl: NavController, public menuCtrl: MenuController, private statusBar: StatusBar, private camera: Camera) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController, public modalCtrl: ModalController) {
 
   }
   ngAfterViewInit() {
@@ -29,53 +29,53 @@ export class HomePage {
     'Paid': [
       {
         name: '资产包转让',
-        img: '../../assets/imgs/money.png'
+        img: 'assets/imgs/money.png'
       },
       {
         name: '债权转让',
-        img: '../../assets/imgs/zqtrans.png'
+        img: 'assets/imgs/zqtrans.png'
       },
       {
         name: '固产转让',
-        img: '../../assets/imgs/gctrans.png'
+        img: 'assets/imgs/gctrans.png'
       },
       {
         name: '商业保理',
-        img: '../../assets/imgs/sybaoxian.png'
+        img: 'assets/imgs/sybaoxian.png'
       },
       {
         name: '典当担保',
-        img: '../../assets/imgs/danbao.png'
+        img: 'assets/imgs/danbao.png'
       },
       {
         name: '融资借贷',
-        img: '../../assets/imgs/rz.png'
+        img: 'assets/imgs/rz.png'
       }, {
         name: '悬赏信息',
-        img: '../../assets/imgs/xs.png'
+        img: 'assets/imgs/xs.png'
       },
       {
         name: '尽职调查',
-        img: '../../assets/imgs/dc.png'
+        img: 'assets/imgs/dc.png'
       }
     ],
     'Free': [
 
       {
         name: '资产包转让',
-        img: '../../assets/imgs/money.png'
+        img: 'assets/imgs/money.png'
       },
       {
         name: '债权转让',
-        img: '../../assets/imgs/zqtrans.png'
+        img: 'assets/imgs/zqtrans.png'
       },
       {
         name: '固产转让',
-        img: '../../assets/imgs/gctrans.png'
+        img: 'assets/imgs/gctrans.png'
       },
       {
         name: '商业保理',
-        img: '../../assets/imgs/sybaoxian.png'
+        img: 'assets/imgs/sybaoxian.png'
       },
 
     ],
@@ -141,8 +141,6 @@ export class HomePage {
             money: '500万'
           });
       }
-
-
       infiniteScroll.complete();
       if (this.items.length >= 300) {
         console.log(this.items.length);
@@ -150,4 +148,19 @@ export class HomePage {
       }
     }, 1000);
   }
+
+  openModal(appType){
+    if (appType=="Paid") {
+      console.log("Paid");
+      let modal1 = this.modalCtrl.create(FindinfoPage);
+      modal1.present();
+
+    } else if(appType="Free"){
+      console.log("Free");
+      let modal2 = this.modalCtrl.create(FindservePage);
+      modal2.present();
+    }
+  }
+
+
 }

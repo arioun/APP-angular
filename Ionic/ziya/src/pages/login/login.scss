@@ -1,7 +1,7 @@
 page-login {}
 
 .login-bg {
-    background: url("../../assets/imgs/login-bg.png") center no-repeat!important;
+    background: url("../assets/imgs/login-bg.png") center no-repeat!important;
     background-size: contain;
 }
 
@@ -16,8 +16,12 @@ page-login {}
     left: 15px;
 }
 
+.bgc div {
+    background: transparent;
+}
+
 .login-logo {
-    margin: 50px auto;
+    margin: 60px auto;
 }
 
 .login-logo img {
@@ -36,31 +40,38 @@ page-login {}
 }
 
 .login-input {
-    margin-top: 80px;
+    text-align: center;
 }
 
 .abc {
-    margin-top: 15px;
+    display: inline-block;
     clear: both;
 }
 
-.abc img {
+.login-img {
     width: 30px;
     height: 30px;
     float: left;
     position: relative;
-    left: 30px;
-    top: 20px;
+    top: 10px;
+    left: -5px;
 }
 
 .input-bg {
     margin: 0 auto;
+    display: block;
     background: transparent;
-    width: 280px;
+    width: 200px;
+    text-align: center;
+}
+
+.input-bg input {
+    text-align: left;
 }
 
 .btn-size {
-    margin-left: 55px;
+    margin: 30px auto;
+    display: block;
     width: 300px;
     font-size: 20px;
 }

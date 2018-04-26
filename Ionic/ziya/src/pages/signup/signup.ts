@@ -15,7 +15,6 @@ export class SignupPage {
   backtologin() {
     let data = { 'foo': 'bar' };
     this.viewCtrl.dismiss(data);
-    this.navCtrl.push(LoginPage);
   }
 
 }

@@ -1,11 +1,13 @@
 <ion-header>
 
     <ion-navbar>
-        <button ion-button color='white' [menuToggle]="activeMenu" (click)="backtofabu()">
-             <ion-icon name="ios-arrow-back"style="color: #000;"></ion-icon>
-        </button>
+        <ion-buttons left>
+            <button ion-button icon-only (click)="backtofabu()">
+             <ion-icon name="ios-arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
         <ion-title text-center>发布信息</ion-title>
-        <ion-buttons end>
+        <ion-buttons right>
             <button ion-button icon-only>
           <ion-icon name='search' color="primary"></ion-icon>
         </button>

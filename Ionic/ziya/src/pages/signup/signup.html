@@ -1,34 +1,49 @@
 <ion-content padding class="login-bg">
-    <ion-icon name="ios-arrow-back" class="login-back" (click)="backtologin()"> </ion-icon>
-    <ion-title text-center><span style="color: #fff">手机注册</span></ion-title>
+    <ion-header no-border class="bgc">
+        <ion-navbar>
+            <ion-buttons left>
+                <button ion-button icon-only (click)="backtologin()">
+            <ion-icon name="ios-arrow-back" style="color: #fff"></ion-icon>
+        </button>
+            </ion-buttons>
+            <ion-title text-center>
+                <span style="color: #fff;">手机注册</span>
+            </ion-title>
+            <ion-buttons right>
+                <button ion-button icon-only>  
+              <ion-icon name="more" style="opacity:0;"></ion-icon>
+            </button>
+            </ion-buttons>
+        </ion-navbar>
+    </ion-header>
 
     <div class="login-logo">
-        <img src="../../assets/imgs/login-logo.png">
+        <img src="assets/imgs/login-logo.png">
         <p>全球不良资产超级综合服务平台</p>
     </div>
 
     <ion-list class="login-input">
         <div class="abc">
-            <img src="../../assets/imgs/login-un.png" alt="">
+            <div class="login-img"><img src="assets/imgs/login-un.png "></div>
             <ion-item class="input-bg">
                 <ion-input type="text" placeholder="手机号"></ion-input>
             </ion-item>
         </div>
-        <div class="abc">
-            <img src="../../assets/imgs/login-pw.png">
+        <div class="abcd">
+            <div class="yzm-img"><img src="assets/imgs/yzm.png "></div>
             <ion-item class="input-yzm">
                 <ion-input type="text" placeholder="请输入验证码" style="color: #fff;"></ion-input>
             </ion-item>
             <button ion-button class="yzm">获取验证码</button>
         </div>
         <div class="abcd">
-            <img src="../../assets/imgs/login-pw.png">
+            <div class="login-img"><img src="assets/imgs/login-pw.png "></div>
             <ion-item class="input-bg">
                 <ion-input type="password" placeholder="请输入密码" style="color: #fff;"></ion-input>
             </ion-item>
         </div>
         <div class="abc">
-            <img src="../../assets/imgs/login-pw.png">
+            <div class="login-img"><img src="assets/imgs/login-pw.png "></div>
             <ion-item class="input-bg">
                 <ion-input type="password" placeholder="请再次输入密码" style="color: #fff;"></ion-input>
             </ion-item>

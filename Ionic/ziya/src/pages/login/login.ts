@@ -23,5 +23,7 @@ export class LoginPage {
       modal.present();
     
   }
-
+  gotohome(){
+    this.navCtrl.push(HomePage);
+  }
 }

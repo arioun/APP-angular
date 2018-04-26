@@ -1,28 +1,25 @@
 page-signup {}
 
 .input-yzm {
-    margin-left: 80px;
     background: transparent;
-    width: 200px;
+    width: 130px;
+    float: left;
 }
 
 .yzm {
     float: right;
-    top: -50px;
-    right: 50px;
 }
 
-.abcd {
-    position: relative;
-    top: -15px;
-    clear: both;
-}
-
-.abcd img {
+.yzm-img {
     width: 30px;
     height: 30px;
     float: left;
     position: relative;
-    left: 30px;
-    top: 20px;
+    top: 10px;
+    left: -5px;
+}
+
+.abcd {
+    display: inline-block;
+    clear: both;
 }
